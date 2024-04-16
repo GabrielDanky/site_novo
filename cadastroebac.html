@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>CADASTRE-SE ABAIXO</h1>
+    <form>
+        <label for="usuario">Usuário:</label>
+        <input id="usuario" type="text" placeholder="Digite seu nome de usuário" >
+        <br>
+        <label for="email">E-mail:</label>
+        <input id="email" type="email" placeholder="Digite seu e-mail" >
+        <br>
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" placeholder="Digite sua senha" >
+        <br>
+        <label>Gênero:</label>
+        <select >
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="nao_binario">Não Binário</option>
+        </select>
+        <br>
+        <input type="checkbox" id="checkbox-termos" >
+        <label for="checkbox-termos">Aceito os termos e condições</label>
+        <br>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    <form action="./login.html">
+        <input type="submit" value="Voltar Login" />
+    </form>
+    <a href="./index.html"> <button>Voltar ao Menu</button> </a>
+</body>
+</html>

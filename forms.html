@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form> <!--Inicio do corpo do formulario-->
+        <label>Seu Nome</label> <!--Label = Texto antes da caixa de escrita.-->
+        <input id="Nome" type="text" placeholder="Seu nome"/> <!--Input = Cria uma caixa para escrever--> <!-- id = Identidade da classe --> <!-- Type = Tipo do input --> <!-- Placeholder = texto fantasma dentro do input -->
+        <br />
+        <label for="email">Seu Email.</label> <!--Input = Cria uma caixa para escrever--> <!-- for = Para definir uma condição --> 
+        <input id="email" type="email" placeholder="Seu Email"  /> <!--Input = Cria uma caixa para escrever--> <!-- id = Identidade da classe --> <!-- Type = Tipo do input --> <!-- Placeholder = texto fantasma dentro do input -->
+        <br />
+        <label>Seu Telefone</label>
+        <input id="Telefone" type="tel" placeholder="Seu telefone" /><!--Input = Cria uma caixa para escrever--> <!-- id = Identidade da classe --> <!-- Type = Tipo do input --> <!-- Placeholder = texto fantasma dentro do input -->
+        <input type="number" max="10" min="2" step="2" /> <!--max = maximo que um numero pode chegar --> <!--min = minimo que um numero pode chegar --> <!--Pular de 2 em 2-->
+        <input type="file" /> <br /> <!--Sessão para escolher um arquivo-->
+        <input type="color" /> <!--Definir uma cor-->
+        <input type="checkbox" /> <label id="checkbox-termos" for="checkbox-termos">Aceito os termos</label> <!-- Checkbox = Caixa de seleção-->
+        <p>
+            Qual sua cor favorita?
+        </p>
+        <input type="radio" name="cor-favorita" id="cor-verde" /> <label for="cor-vermelha">Vermelho</label>
+        <input type="radio" name="cor-favorita" id="cor-verde"/> <label for="cor-verde">Verde</label>
+        <input type="radio" name="cor-favorita" id="cor-azul"/> <label for="cor-azul">Azul</label><br />
+        <label>Qual seu Filme Favorito</label>
+        <select multiple> <!--Selecionar Multiplos-->
+            <option>Filme A</option> <!--Definie uma opção-->
+            <option>Filme B</option> <!--Definie uma opção-->
+            <option>Filme C</option> <!--Definie uma opção-->
+        </select> <!--Seleciona-->
+        <br /> <!--Quebra Linha-->
+        <textarea></textarea> <!--Cria uma caixa para escrever.-->
+        <button type="submit"> <!--Cria um botão do tipo submit ou envio-->
+            Enviar
+        </button>
+        <button type="reset"> <!--Cria um botão do tipo resetar ou excluir-->
+            Limpar
+        </button>
+        </form>
+</body>
+</html>
